@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Html/css task-1</title>
+    <style>
+        .c1{
+            width: 175px;
+        }
+        .c1 a{
+            background-color:aquamarine ;
+            color: black;
+            display: block;
+            padding: 12px;
+        }
+        .c1 a:hover{
+            background-color:greenyellow ;
+        }
+        .c1 a.a1{
+            background-color: orange;
+        }
+
+        .ul{
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: white;
+            border: 1px solid black;
+        }
+        li{
+            float: left;
+            border-right:1px solid blue;
+            background-color: rgb(219, 219, 219);
+        }
+        li a{
+            display: block;
+            color: blue;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        li a:hover:not(.a2){
+            background-color: skyblue ;
+        }
+        .a2{
+            background-color: grey;
+            color:white;
+        }
+    </style>
+</head>
+<body>
+    <h3>Vertical Navigation Bar</h3>
+    <div class="c1" align = "center" style="border: 1px solid black; padding: 10px 10px 0px 10px;">
+        <a href="#" style="text-decoration: none;" class="a1"> Home </a>
+        
+        <a href="#" style="text-decoration: none;"> Java </a>
+       
+        <a href="#" style="text-decoration: none;"> CSS </a>
+       
+        <a href="#" style="text-decoration: none;"> HTML </a>
+       
+        <a href="#" style="text-decoration: none;"> Bootstrap </a>
+    </div>
+    
+    <h3 style = "position:relative; left:700px; top:-230px;" > Horizontal Navigation Bar </h3>
+    
+    <ul type = "none" style = "position:relative; left:600px; top:-210px;">
+        <li> <a class = "a2" href="#" style="text-decoration: none;"> Home </a> </li>
+        
+        <li> <a href="#" style="text-decoration: none;"> Java </a></li>
+       
+        <li> <a href="#" style="text-decoration: none;"> CSS </a> </li>
+       
+        <li> <a href="#" style="text-decoration: none;"> HTML </a> </li>
+       
+        <li> <a href="#" style="text-decoration: none;"> Bootstrap </a>  </li>
+    </ul>
+</body>
+</html>
